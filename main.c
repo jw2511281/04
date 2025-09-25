@@ -3,17 +3,15 @@
 
 int main(int argc, char *argv[])
 {
-    int x, y, z, m;
-    int a, b, c;
-    x=2;
-    z=1;
-    a=3;
-    b=4;
-    c=5;
-    y=a*x*x + b*x + c;
-    m=(x + y + z)/3;
+    int a, b;
+    float c;
     
-    printf("y=%d, m=%d", y, m);
+    printf("Enter a, b number: \n");
+    scanf("%i %i", &a, &b);
+    
+    c= a*b + b/a - a*a%b;
+    
+    printf("a*b+b/a-a*a%%b= %f", c);
   
   system("PAUSE");	
   return 0;
