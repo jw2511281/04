@@ -3,15 +3,15 @@
 
 int main(int argc, char *argv[])
 {
-    int a, b;
-    float c;
+    int a, b, c;
     
-    printf("Enter a, b number: \n");
-    scanf("%i %i", &a, &b);
+    printf("Input the second: ");
+    scanf("%i", &a);
     
-    c= a*b + b/a - a*a%b;
+    b= a/60;
+    c= a%60;
     
-    printf("a*b+b/a-a*a%%b= %f", c);
+    printf("The time is %i : %i \n", b, c);
   
   system("PAUSE");	
   return 0;
